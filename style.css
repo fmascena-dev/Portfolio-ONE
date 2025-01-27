@@ -8,9 +8,42 @@
 body {
   background: linear-gradient(90deg, #0c4d5c 10%, #010101 100%);
   height: 100vh;
+}
+
+header {
   display: flex;
-  justify-content: center;
   align-items: center;
+  margin: 2% 0 2% 10%;
+  padding: 1rem 0;
+}
+
+.navegacao-lista {
+  display: flex;
+  gap: 2rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  list-style: none;
+}
+
+.navegacao-lista-link {
+  text-decoration: none;
+  color: #22d4fd;
+  position: relative;
+}
+
+.navegacao-lista-link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 2px;
+  background-color: #22d4fd;
+  transition: width 0.5s ease-in-out;
+}
+
+.navegacao-lista-link:hover::after {
+  width: 100%;
 }
 
 main {
@@ -18,6 +51,7 @@ main {
   justify-content: center;
   align-items: center;
   gap: 2rem;
+  padding: 2rem;
 }
 
 section {
@@ -45,25 +79,43 @@ p {
 .buttons-container {
   width: 100%;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  gap: 2rem;
-  /* margin-top: 1rem; */
+  gap: 1rem;
+}
+
+.buttons-container p {
+  font-size: 1.5rem;
+  color: #fff;
+  font-weight: 400;
+  font-family: 'Krona One', sans-serif;
 }
 
 .button {
   width: 280px;
   padding: 21.5px 0;
-  background-color: #22d4fd;
-  color: #000;
-  border: none;
+  background-color: transparent;
+  color: #f6f6f6;
+  border: 2px solid #22d4fd;
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 0.5rem;
   border-radius: 1rem;
   font-size: 1.4rem;
   text-decoration: none;
   font-weight: 600;
+  transition: all 0.5s ease-in-out;
+}
+
+.button:hover {
+  background-color: #031a1f;
+  color: #a09d9d;
+}
+
+.button img {
+  width: 20px;
 }
 
 figure {
