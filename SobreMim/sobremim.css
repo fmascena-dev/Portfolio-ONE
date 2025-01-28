@@ -66,7 +66,7 @@ main {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  gap: 2rem;
+  gap: 5rem;
 }
 
 .sobremim-text h1 {
@@ -75,7 +75,7 @@ main {
 }
 
 .sobremim-text {
-  width: 60%;
+  width: 50%;
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -88,10 +88,11 @@ figure {
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 50%;
 }
 
 img {
-  width: 80%;
+  width: 100%;
 }
 
 footer {
@@ -105,4 +106,82 @@ footer {
   color: #000;
   font-size: 1.4rem;
   font-weight: 500;
+}
+
+@media (max-width: 720px) {
+  header {
+    align-items: center;
+    justify-content: center;
+    padding: 5% 0%;
+  }
+
+  main {
+    padding: 5%;
+  }
+
+  .sobremim {
+    flex-direction: column-reverse;
+    padding: 4%;
+  }
+
+  .sobremim-text {
+    width: auto;
+    text-align: center;
+  }
+
+  .sobremim-text h1 {
+    font-size: 2.5rem;
+  }
+
+  .sobremim-text p {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+  }
+
+  figure {
+    width: auto;
+  }
+
+  figure img {
+    width: 100%;
+  }
+}
+
+@media (min-width: 721px) and (max-width: 969px) {
+  header {
+    align-items: center;
+    justify-content: center;
+    padding: 5% 0%;
+  }
+
+  main {
+    padding: 5%;
+  }
+
+  .sobremim {
+    flex-direction: column-reverse;
+    padding: 4%;
+  }
+
+  .sobremim-text {
+    width: auto;
+    text-align: center;
+  }
+
+  .sobremim-text h1 {
+    font-size: 2.5rem;
+  }
+
+  .sobremim-text p {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+  }
+
+  figure {
+    width: auto;
+  }
+
+  figure img {
+    width: 100%;
+  }
 }
