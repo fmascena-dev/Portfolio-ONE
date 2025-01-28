@@ -13,8 +13,7 @@ body {
 header {
   display: flex;
   align-items: center;
-  margin: 2% 0 2% 10%;
-  padding: 1rem 0;
+  padding: 2% 0% 0% 15%;
 }
 
 .navegacao-lista {
@@ -48,10 +47,10 @@ header {
 
 main {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   gap: 2rem;
-  padding: 2rem;
+  padding: 8% 15%;
 }
 
 section {
@@ -93,8 +92,8 @@ p {
 }
 
 .button {
-  width: 280px;
-  padding: 21.5px 0;
+  width: 220px;
+  padding: 15.5px 0;
   background-color: transparent;
   color: #f6f6f6;
   border: 2px solid #22d4fd;
@@ -111,7 +110,7 @@ p {
 
 .button:hover {
   background-color: #031a1f;
-  color: #a09d9d;
+  color: #e6e6e6;
 }
 
 .button img {
@@ -126,4 +125,17 @@ figure {
 
 img {
   width: 80%;
+}
+
+footer {
+  background: #22d4fd;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+.rodape {
+  text-align: center;
+  color: #000;
+  font-size: 1.2rem;
+  font-weight: 600;
 }
